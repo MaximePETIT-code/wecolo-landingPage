@@ -43,7 +43,7 @@ body {
   text-decoration: none;
   color: #24253B;
   font-weight: bold;
-  padding: 20px 42px;
+  padding: 16px 42px;
   border-radius: 26px;
 }
 
@@ -62,7 +62,7 @@ body {
 }
 
 .secondary a {
-  padding: 16px 38px;
+  padding: 12px 38px;
   background-color: transparent;
   color: #F8FBFF;
   border: 4px #F8FBFF solid;
