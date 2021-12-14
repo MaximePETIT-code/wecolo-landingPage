@@ -115,6 +115,11 @@ header .content .right .content-img {
   z-index: -1;
 }
 
+#avantages {
+  background-color: #24253B;
+  height: 50vh;
+}
+
 body {
   background-color: #F8FBFF;
   font-family: 'Inter', sans-serif;
