@@ -1,10 +1,12 @@
 nav{
     background-color: $black;
     height: 84px;
+    width: 100%;
+    position: fixed;
 
     .contain{
         height: 100%;
-        width: 90%;
+        width: 94%;
         margin: 0 auto;
         display: flex;
         align-items: center;
@@ -17,6 +19,37 @@ nav{
 
         .primary{
             margin-right: 20px;
+        }
+    }
+}
+
+header{
+
+    height: 100vh;
+    .content{
+        padding-top: 84px;
+        height: 100%;
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .baseline{
+            margin-top: 17px;
+            font-weight: bold;
+            font-size: 1.25rem;
+        }
+
+        .description{
+            font-size: 1.25rem;
+            margin-top: 30px;
+            width: 554px;
+            line-height: 1.2;
+        }
+
+        .btn{
+            margin-right: 15px;
         }
     }
 }
