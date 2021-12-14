@@ -25,15 +25,16 @@ nav{
 
 header{
 
-    height: 100vh;
-
     .content{
         padding-top: 84px;
-        height: 100%;
+        height: calc(100vh - 84px);
         width: 70%;
         margin: 0 auto;
         display: flex;
         flex-direction: row;
+        @media (max-width: 1732px){ 
+            width: 80%;
+        }
 
         .left{
             display: flex;
@@ -66,10 +67,12 @@ header{
                 display: flex;
                 align-items: center;
                 justify-content: flex-end;
-            }
-            img{
-                width: 597px;
-                height: 590px;
+
+                img{
+                    @media (max-width: 1732px){ 
+                        height: 80%;
+                    }
+                }
             }
         }
     }

@@ -32,13 +32,9 @@ nav .button .primary {
   margin-right: 20px;
 }
 
-header {
-  height: 100vh;
-}
-
 header .content {
   padding-top: 84px;
-  height: 100%;
+  height: calc(100vh - 84px);
   width: 70%;
   margin: 0 auto;
   display: -webkit-box;
@@ -48,6 +44,12 @@ header .content {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+@media (max-width: 1732px) {
+  header .content {
+    width: 80%;
+  }
 }
 
 header .content .left {
@@ -100,9 +102,10 @@ header .content .right .content-img {
           justify-content: flex-end;
 }
 
-header .content .right img {
-  width: 597px;
-  height: 590px;
+@media (max-width: 1732px) {
+  header .content .right .content-img img {
+    height: 80%;
+  }
 }
 
 body {
