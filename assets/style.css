@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 nav {
   background-color: #24253B;
   height: 84px;
@@ -31,6 +32,7 @@ nav .button .primary {
 
 body {
   background-color: #F8FBFF;
+  font-family: 'Inter', sans-serif;
 }
 
 .btn {
