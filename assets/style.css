@@ -1,1 +1,68 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+nav {
+  background-color: #24253B;
+  height: 84px;
+}
+
+nav .contain {
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .button {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+nav .button .primary {
+  margin-right: 20px;
+}
+
+body {
+  background-color: #F8FBFF;
+}
+
+.btn {
+  display: inline-block;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #24253B;
+  font-weight: bold;
+  padding: 20px 42px;
+  border-radius: 26px;
+}
+
+.primary a {
+  background-color: #FBBB1A;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.primary a:hover {
+  background-color: #eeb116;
+  -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.secondary a {
+  padding: 16px 38px;
+  background-color: transparent;
+  color: #F8FBFF;
+  border: 4px #F8FBFF solid;
+}
+/*# sourceMappingURL=style.css.map */
