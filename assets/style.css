@@ -108,6 +108,13 @@ header .content .right .content-img {
   }
 }
 
+.wave {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
 body {
   background-color: #F8FBFF;
   font-family: 'Inter', sans-serif;
