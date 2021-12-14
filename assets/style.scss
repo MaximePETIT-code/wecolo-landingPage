@@ -1,5 +1,6 @@
 @import "_variables.scss";
 @import "_header.scss";
+@import "_avantages.scss";
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 body{
@@ -7,6 +8,7 @@ body{
     font-family: 'Inter', sans-serif;
     font-family: 'Lexend', sans-serif;
     color: $black;
+    overflow-x: hidden;
 }
 
 .btn{
@@ -57,4 +59,21 @@ body{
     font-size: 3.9375rem;
     font-weight: bold;
     color: $yellow;
+}
+
+.content{
+    width: 70%;
+    margin: 0 auto;
+}
+.front{
+    position: relative;
+    z-index: 1;
+}
+
+section{
+
+    .title{
+        text-align: center;
+        line-height: 1.3;
+    }
 }
