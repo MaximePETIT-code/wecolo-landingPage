@@ -26,30 +26,51 @@ nav{
 header{
 
     height: 100vh;
+
     .content{
         padding-top: 84px;
         height: 100%;
         width: 70%;
         margin: 0 auto;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: row;
 
-        .baseline{
-            margin-top: 17px;
-            font-weight: bold;
-            font-size: 1.25rem;
+        .left{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            .baseline{
+                margin-top: 17px;
+                font-weight: bold;
+                font-size: 1.25rem;
+            }
+    
+            .description{
+                font-size: 1.25rem;
+                margin-top: 30px;
+                width: 554px;
+                line-height: 1.2;
+            }
+    
+            .btn{
+                margin-right: 15px;
+            }
         }
 
-        .description{
-            font-size: 1.25rem;
-            margin-top: 30px;
-            width: 554px;
-            line-height: 1.2;
-        }
+        .right{
+            width: 100%;
+            display: flex;
 
-        .btn{
-            margin-right: 15px;
+            .content-img{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+            }
+            img{
+                width: 597px;
+                height: 590px;
+            }
         }
     }
 }

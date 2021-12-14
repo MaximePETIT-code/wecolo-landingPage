@@ -44,30 +44,65 @@ header .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header .content .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
-header .content .baseline {
+header .content .left .baseline {
   margin-top: 17px;
   font-weight: bold;
   font-size: 1.25rem;
 }
 
-header .content .description {
+header .content .left .description {
   font-size: 1.25rem;
   margin-top: 30px;
   width: 554px;
   line-height: 1.2;
 }
 
-header .content .btn {
+header .content .left .btn {
   margin-right: 15px;
+}
+
+header .content .right {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .content .right .content-img {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header .content .right img {
+  width: 597px;
+  height: 590px;
 }
 
 body {
