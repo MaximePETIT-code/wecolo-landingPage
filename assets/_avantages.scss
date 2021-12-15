@@ -41,6 +41,9 @@
     img{
         width: 150%;
         height: 100%;
+        @media (min-width: 2160px){ 
+            width: 200%;
+        }
     }
 }
 

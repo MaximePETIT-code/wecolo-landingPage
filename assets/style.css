@@ -270,6 +270,12 @@ header .content .right .content-img {
   height: 100%;
 }
 
+@media (min-width: 2160px) {
+  .wave2 img {
+    width: 200%;
+  }
+}
+
 #video {
   margin: 300px 0 100px 0;
   display: -webkit-box;
