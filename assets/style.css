@@ -123,11 +123,15 @@ header .content .right .content-img {
 
 .modal .modal-header {
   padding: 1rem 2rem;
+  position: relative;
 }
 
 .modal .modal-header .close {
   padding: 0;
   margin: 0;
+  position: absolute;
+  top: 10px;
+  left: 20px;
 }
 
 .modal .modal-header .titleContainer {
@@ -211,6 +215,7 @@ header .content .right .content-img {
   position: relative;
   background-color: #24253B;
   z-index: -3;
+  width: 100vw;
 }
 
 #avantages .contenu-section {
