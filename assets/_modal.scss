@@ -1,0 +1,83 @@
+
+.modal{
+
+    .modal-content{
+        background-color: $white;
+    }
+    .modal-header{
+        padding: 1rem 2rem;
+        .close{
+            padding: 0;
+            margin: 0;
+        }
+
+        .titleContainer{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            .modal-title{
+                font-weight: bold;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .modal-body{
+        padding: 1.7rem 2rem;
+
+        .title-modal{
+            font-size: 1.6rem;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+    }
+
+    .button{
+        padding: 50px 0 20px 0;
+    }
+}
+:required::after{
+    content: "";
+    background-color: red;
+    height: 100px;
+}
+.form-inscription{
+    .conteneur-champ{
+        margin-bottom: 15px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    input, select{
+        position: relative;
+        padding: 15px 10px;
+        border-radius: 8px;
+        border: 2px solid;
+
+        &:not(.nom-prenom){
+            width: 100%;
+        }
+    }
+
+    .champ-nom-prenom{
+        display: flex;
+        justify-content: space-between;
+
+        .nom-prenom{
+            width: 48%;
+        }
+    }
+
+    .modal-btn{
+        margin-top: 20px;
+        width: 100%;
+        background-color: $yellow;
+        padding: 16px 42px;
+        border-radius: 26px;
+        font-weight: bold;
+        border: 0;
+    }
+
+}

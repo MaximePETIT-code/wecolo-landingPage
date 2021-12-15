@@ -23,8 +23,8 @@
                 </div>
 
                 <div class="button">
-                    <div class="primary btn">
-                        <a href="#">Devenir un organisateur</a>
+                    <div data-toggle="modal" data-target="#inscriptionModal" class="primary btn">
+                        <a>Devenir un organisateur</a>
                     </div>
                     <div class="secondary btn">
                         <a href="#">Connexion</a>
@@ -39,12 +39,73 @@
                 <h2 class="baseline">boostez la visibilité de votre colonie de vacances</h2>
                 <p class="description">S’inscrire sur Wecolo c’est assurer le meilleur des référencement pour son organisme. Nous attendons plus que vous !</p>
                 <div class="button">
-                    <div class="primary btn">
+                    <div data-toggle="modal" data-target="#inscriptionModal" class="primary btn">
                         <a href="#">M'inscrire</a>
                     </div>
                     <div class="secondary2 btn">
                         <a href="#">En savoir plus</a>
                     </div>
+                    <div class="modal fade" id="inscriptionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <div class="titleContainer">
+                                    <h5 class="modal-title" id="exampleModalLabel">Inscription</h5>
+                                </div>
+                            </div>
+                            <div class="modal-body">
+                                <h3 class="title-modal">Rejoignez les organisateurs</h3>
+                                <form class="form-inscription" action="#">
+                                    <div class="conteneur-champ">
+                                        <input type="text" name="organisme" id="organisme" placeholder="Nom de l'organisme *" required>
+                                        <!-- <label class="form-label" for="organisme">Nom de l'organisme</label> -->
+                                    </div>
+
+                                    <div class="conteneur-champ champ-nom-prenom">
+                                        <input class="nom-prenom" type="text" name="name" id="name" placeholder="Nom *" required>
+                                        <!-- <label class="form-label" for="nom">Nom</label> -->
+                                        <input class="nom-prenom" type="text" name="prenom" id="prenom" placeholder="Prenom *" required>
+                                        <!-- <label class="form-label" for="prenom">Prenom</label> -->
+                                    </div>
+
+                                    <div class="conteneur-champ">
+                                        <select name="fonction" id="fonction">
+                                            <option value="">Veuillez sélectionner une fonction</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                        <!-- <label for="fonction">Fonction</label> -->
+                                    </div>
+
+                                    <div class="conteneur-champ">
+                                        <input type="email" name="couriel" id="couriel" placeholder="Adresse mail *" required>
+                                        <!-- <label for="email">Adresse mail</label> -->
+                                    </div>
+
+                                    <div class="conteneur-champ">
+                                        <input type="tel" name="numero" id="numero" placeholder="N° de téléphone">
+                                        <!-- <label for="numero">N° de téléphone</label> -->
+                                    </div>
+
+                                    <span>* champs obligaroires</span>
+
+                                    <button class="modal-btn">
+                                        Valider
+                                    </button>
+                                </form>
+                                
+                            </div>
+
+
+                        </div>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
             <div class="right">
@@ -195,8 +256,8 @@
     <section id="cta">
         <h2 class="title">N'attendez plus,<br/> devenez organisateur sur Wecolo</h2>
         <div class="button">
-            <div class="black btn">
-                <a href="#">C'est parti !</a>
+            <div data-toggle="modal" data-target="#inscriptionModal" class="black btn">
+                <a>C'est parti !</a>
             </div>
         </div>
     </section>

@@ -117,6 +117,96 @@ header .content .right .content-img {
   z-index: -1;
 }
 
+.modal .modal-content {
+  background-color: #F8FBFF;
+}
+
+.modal .modal-header {
+  padding: 1rem 2rem;
+}
+
+.modal .modal-header .close {
+  padding: 0;
+  margin: 0;
+}
+
+.modal .modal-header .titleContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modal .modal-header .titleContainer .modal-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.modal .modal-body {
+  padding: 1.7rem 2rem;
+}
+
+.modal .modal-body .title-modal {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.modal .button {
+  padding: 50px 0 20px 0;
+}
+
+:required::after {
+  content: "";
+  background-color: red;
+  height: 100px;
+}
+
+.form-inscription .conteneur-champ {
+  margin-bottom: 15px;
+}
+
+.form-inscription .conteneur-champ:last-child {
+  margin-bottom: 0;
+}
+
+.form-inscription input, .form-inscription select {
+  position: relative;
+  padding: 15px 10px;
+  border-radius: 8px;
+  border: 2px solid;
+}
+
+.form-inscription input:not(.nom-prenom), .form-inscription select:not(.nom-prenom) {
+  width: 100%;
+}
+
+.form-inscription .champ-nom-prenom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form-inscription .champ-nom-prenom .nom-prenom {
+  width: 48%;
+}
+
+.form-inscription .modal-btn {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #FBBB1A;
+  padding: 16px 42px;
+  border-radius: 26px;
+  font-weight: bold;
+  border: 0;
+}
+
 #avantages {
   position: relative;
   background-color: #24253B;
@@ -244,6 +334,7 @@ header .content .right .content-img {
   background-color: #FBBB1A;
   margin-top: 100px;
   position: relative;
+  width: 100vw;
 }
 
 #cta .title {
@@ -267,6 +358,7 @@ header .content .right .content-img {
 footer {
   background-color: #24253B;
   color: #F8FBFF;
+  width: 100vw;
 }
 
 footer .content {
@@ -354,6 +446,7 @@ body {
 }
 
 .btn {
+  padding: 0;
   display: inline-block;
 }
 
@@ -407,6 +500,7 @@ body {
 
 .button .black a:hover {
   background-color: #141420;
+  color: #F8FBFF;
   -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
   -webkit-transition: 0.3s;
