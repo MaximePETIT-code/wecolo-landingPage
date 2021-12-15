@@ -355,6 +355,16 @@ header .content .right .content-img {
   font-size: 23px;
 }
 
+#rejoindre .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#rejoindre .box .left-content {
+  background-color: red;
+}
+
 footer {
   background-color: #24253B;
   color: #F8FBFF;
