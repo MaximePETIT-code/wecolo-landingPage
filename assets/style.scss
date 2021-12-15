@@ -1,6 +1,7 @@
 @import "_variables.scss";
 @import "_header.scss";
 @import "_avantages.scss";
+@import "_cta.scss";
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 body{
@@ -42,6 +43,13 @@ body{
             background-color: transparent;
             color: $white;
             border: 4px $white solid;
+        }
+    }
+
+    .black{
+        a{
+            background-color: $black;
+            color: $white;
         }
     }
 
