@@ -17,6 +17,11 @@
                     color: $black;
                     padding: 0;
                     text-decoration: none;
+                    width: 100%;
+                    text-align: start;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
 
                     &:hover{
                         color: $yellow;

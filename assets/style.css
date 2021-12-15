@@ -37,7 +37,7 @@ nav .button .primary {
 
 header .content {
   padding-top: 84px;
-  height: calc(100vh - 84px);
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,6 +54,7 @@ header .content {
 }
 
 header .content .left {
+  padding-top: 84px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -211,6 +212,17 @@ header .content .right .content-img {
   color: #24253B;
   padding: 0;
   text-decoration: none;
+  width: 100%;
+  text-align: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #faq .accordion .card .card-header .btn-link:hover {
@@ -366,11 +378,29 @@ body {
   background-color: transparent;
   color: #F8FBFF;
   border: 4px #F8FBFF solid;
+  -webkit-transition: border-color 0.3s;
+  transition: border-color 0.3s;
+}
+
+.button .secondary a:hover {
+  -webkit-transition: border-color 0.3s;
+  transition: border-color 0.3s;
+  border-color: #FBBB1A;
 }
 
 .button .black a {
   background-color: #24253B;
   color: #F8FBFF;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.button .black a:hover {
+  background-color: #141420;
+  -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .button .secondary2 a {
@@ -378,6 +408,14 @@ body {
   background-color: transparent;
   color: #24253B;
   border: 4px #FBBB1A solid;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.button .secondary2 a:hover {
+  background-color: #FBBB1A;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
 }
 
 .title {

@@ -29,7 +29,7 @@ header{
 
     .content{
         padding-top: 84px;
-        height: calc(100vh - 84px);
+        height: 100vh;
         display: flex;
         flex-direction: row;
         @media (max-width: 1732px){ 
@@ -37,6 +37,7 @@ header{
         }
 
         .left{
+            padding-top: 84px;
             display: flex;
             justify-content: center;
             flex-direction: column;
