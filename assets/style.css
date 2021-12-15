@@ -118,13 +118,12 @@ header .content .right .content-img {
 
 #avantages {
   position: relative;
+  background-color: #24253B;
+  z-index: -3;
 }
 
 #avantages .contenu-section {
-  position: relative;
-  z-index: -2;
   padding: 65px 0;
-  background-color: #24253B;
 }
 
 #avantages .round {
@@ -173,6 +172,49 @@ header .content .right .content-img {
 .wave2 img {
   width: 150%;
   height: 100%;
+}
+
+#video {
+  margin: 300px 0 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#video video {
+  width: 844px;
+}
+
+#faq {
+  margin: 100px 0;
+}
+
+#faq .accordion {
+  margin-top: 100px;
+}
+
+#faq .accordion .card {
+  border: none;
+  background-color: transparent;
+  margin-bottom: 15px;
+}
+
+#faq .accordion .card .card-header {
+  background-color: transparent;
+}
+
+#faq .accordion .card .card-header .btn-link {
+  font-weight: bold;
+  color: #24253B;
+  padding: 0;
+  text-decoration: none;
+}
+
+#faq .accordion .card .card-header .btn-link:hover {
+  color: #FBBB1A;
 }
 
 #cta {

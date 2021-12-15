@@ -1,11 +1,10 @@
 #avantages{
     position: relative;
+    background-color: $black;
+    z-index: -3;
 
     .contenu-section{
-        position: relative;
-        z-index: -2;
         padding: 65px 0;
-        background-color: $black;
     }
     .round{
         position: absolute;
