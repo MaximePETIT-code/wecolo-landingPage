@@ -4,6 +4,7 @@ nav {
   height: 84px;
   width: 100%;
   position: fixed;
+  z-index: 2;
   -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.45);
           box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.45);
 }
@@ -197,6 +198,87 @@ header .content .right .content-img {
 
 #cta .button .black {
   font-size: 23px;
+}
+
+footer {
+  background-color: #24253B;
+  color: #F8FBFF;
+}
+
+footer .content {
+  padding: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .content .cr .copyright {
+  margin-top: 25px;
+}
+
+footer .content .categorie {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+footer .content .infos .bureau {
+  margin-bottom: 40px;
+}
+
+footer .content .infos .adresse {
+  margin-top: 15px;
+}
+
+footer .content .infos .rs .liste-rs {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .content .infos .rs .liste-rs li {
+  margin-right: 20px;
+}
+
+footer .content .infos .rs .liste-rs li a {
+  font-size: 25px;
+  text-decoration: none;
+  color: #F8FBFF;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+footer .content .infos .rs .liste-rs li a:hover {
+  color: #FBBB1A;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+footer .content .nav li {
+  margin-bottom: 15px;
+}
+
+footer .content .nav li:last-child {
+  margin-bottom: 0;
+}
+
+footer .content .nav li a {
+  text-decoration: none;
+  color: #F8FBFF;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+footer .content .nav li a:hover {
+  color: #FBBB1A;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 body {
