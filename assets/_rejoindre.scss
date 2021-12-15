@@ -2,9 +2,38 @@
 
     .box{
         display: flex;
+        margin: 50px 0;
 
         .left-content{
-            background-color: red;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-right: 50px;
+
+            .title-categorie{
+                font-size: 2.125rem;
+                font-weight: bold;
+                margin-bottom: 25px;
+            }
+
+            .descr{
+                font-size: 1.125rem;
+                line-height: 1.3;
+            }
+        }
+
+        .right-content{
+            img{
+                width: 500px;
+            }
+        }
+    }
+
+    .sejour{
+        flex-direction: row-reverse;
+        
+        .left-content{
+            margin: 0 0 0 50px;
         }
     }
 }
