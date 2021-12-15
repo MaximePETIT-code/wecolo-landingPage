@@ -229,6 +229,16 @@ header .content .right .content-img {
   color: #FBBB1A;
 }
 
+#faq .questions {
+  font-weight: 300;
+  padding: 2.3rem 1.25rem;
+}
+
+#faq .questions a {
+  color: #FBBB1A;
+  font-weight: bold;
+}
+
 #cta {
   padding: 150px 0;
   background-color: #FBBB1A;

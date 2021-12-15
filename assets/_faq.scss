@@ -30,4 +30,14 @@
             }
         }
     }
+
+    .questions{
+        font-weight: 300;
+        padding: 2.3rem 1.25rem;
+
+        a{
+            color: $yellow;
+            font-weight: bold;
+        }
+    }
 }
