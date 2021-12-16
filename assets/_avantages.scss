@@ -10,6 +10,12 @@
     .round{
         position: absolute;
         top: 0;
+        
+        img{
+            @media (max-width: 590px){ 
+                height: 200px;
+            }
+        }
     }
 }
 
@@ -17,6 +23,9 @@
     margin-top: 70px;
     display: flex;
     justify-content: space-between;
+    @media (max-width: 822px){ 
+        flex-wrap: wrap;
+    }
 
     li{
         display: flex;
@@ -27,14 +36,29 @@
         &:last-child{
             margin-right: 0;
         }
+        @media (max-width: 822px){ 
+            align-items: flex-start;
+            text-align: start;
+            margin-bottom: 50px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
     }
 
     .ico{
         margin-bottom: 25px;
+
+        img{
+            @media (max-width: 822px){ 
+                height: 30px;
+            }
+        }
     }
     .descr{
         color: $white;
         font-size: 1.25rem;
+
     }
 }
 
@@ -42,6 +66,9 @@
     z-index: -3;
     position: absolute;
     bottom: -200px;
+    @media (max-width: 969px){ 
+        display: none;
+    }
 
     img{
         width: 150%;
