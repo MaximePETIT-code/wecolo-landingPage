@@ -12,7 +12,12 @@
             .card-header{
                 background-color: transparent;
 
+                .chevron{
+                    margin-left: 15px;
+                }
+
                 .btn-link{
+                    white-space: normal;
                     font-weight: bold;
                     color: $black;
                     padding: 0;

@@ -163,7 +163,7 @@
         </div>
     </section>
 
-    <section controls id="video">
+    <section id="video">
         <video controls class="player" src="assets/video/wecolo.mp4">
             Votre navigateur ne prend pas en charges les vidéos.
         </video>
@@ -229,14 +229,14 @@
 
     <section id="faq">
         <div class="content">
-            <h2 class="title">Questions fréquentes<br/> des utilisateurs</h2>
+            <h2 class="title">Questions fréquentes des <br/> utilisateurs</h2>
             
             <div class="accordion" id="accordionExample">
                 <div class="card">
                     <div class="card-header" id="headingOne">
                         <h5 class="mb-0">
                         <button class="btn btn-link" id="btn1" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                            Pourquoi choisir WeColo pour accroître sa visibilité ? <i id="chevron1" class="fas fa-chevron-down"></i>
+                            Pourquoi choisir WeColo pour accroître sa visibilité ? <i id="chevron1"  class="fas fa-chevron-down chevron"></i>
                         </button>
                     </h5>
                 </div>
@@ -252,7 +252,7 @@
                     <div class="card-header" id="headingTwo">
                         <h5 class="mb-0">
                         <button class="btn btn-link collapsed" id="btn2" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Pourquoi avoir créé WeColo ? <i id="chevron2" class="fas fa-chevron-down"></i>
+                        Pourquoi avoir créé WeColo ? <i id="chevron2" class="fas fa-chevron-down chevron"></i>
                         </button>
                         </h5>
                 </div>
@@ -269,7 +269,7 @@
                     <div class="card-header" id="headingThree">
                         <h5 class="mb-0">
                         <button class="btn btn-link collapsed" id="btn3" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Est-ce possible de modifier ou supprimer une offre de séjour ? <i id="chevron3" class="fas fa-chevron-down"></i> 
+                            Est-ce possible de modifier ou supprimer une offre de séjour ? <i id="chevron3" class="fas fa-chevron-down chevron"></i> 
                         </button>
                         </h5>
                 </div>
@@ -284,7 +284,7 @@
                     <div class="card-header" id="headingFour">
                         <h5 class="mb-0">
                         <button class="btn btn-link" id="btn4" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseOne">
-                            Dans le cas d’une pandémie comme le Covid-19, quelles sont les conditions d’annulation ? <i id="chevron4" class="fas fa-chevron-down"></i>
+                            Dans le cas d’une pandémie comme le Covid-19, quelles sont les conditions d’annulation ? <i id="chevron4" class="fas fa-chevron-down chevron"></i>
                         </button>
                     </h5>
                 </div>
@@ -311,45 +311,36 @@
             </div>
         </div>
     </section>
-
     <footer>
-        <div class="content">
+        <div class="footer-contain">
             <div class="cr">
-                <div class="logo">
-                    <img src="assets/images/logo.png" alt="Logo Wecolo">
-                </div>
-    
-                <div class="copyright">
-                    © Wecolo - Tous droits réservés.
-                </div>
-    
+                <img src="assets/images/logo.png" alt="Logo de Wecolo" class="logo">
+                <div class="cr-text"><span>© Wecolo. Tous droits réservés.</span></div>
             </div>
-    
-            <div class="infos">
-                <div class="bureau">
-                    <h4 class="categorie">Bureau</h4>
-                    <div class="adresse">
-                        <span>5 Paravis Alan Turing, Paris, 75013</span>
-                    </div>
+
+            <div class="info">
+                <div class="location">
+                    <h3 class="footer-title">Bureau</h3>
+                    <span>5 Paravis Alan Turing, Paris, 75013</span>
                 </div>
-    
-                <div class="rs">
-                    <h4 class="categorie">Nous suivre</h4>
-                    <ul class="liste-rs">
-                        <li><a href="#" class="fab fa-facebook-f" title="Page facebook"></a></li>
-                        <li><a href="#" class="fab fa-instagram" title="Page instagram"></a></li>
-                        <li><a href="#" class="fab fa-twitter" title="Page twitter"></a></li>
-                        <li><a href="#" class="sn fab fa-linkedin-in" title="Page linkedin"></a></li>
+
+                <div class="follow">
+                    <h3 class="footer-title">Nous suivre</h3>
+                    <ul class="list-sn">
+                        <li><a class="sn fab fa-facebook-f hover" title="Notre page Facebook" href="#"></a></li>
+                        <li><a class="sn fab fa-instagram hover" title="Notre page Instagram" href="#" target="_blank"></a></li>
+                        <li><a class="sn fab fa-twitter hover" title="Notre page Twitter" href="#" target="_blank"></a></li>
+                        <li><a class="sn fab fa-linkedin hover" title="Notre page Linkedin" href="#" target="_blank"></a></li>
                     </ul>
                 </div>
             </div>
-    
-            <div class="nav">
+
+            <div class="nav-footer">
                 <ul>
-                    <li><a href="#" title="Catégorie comment ça marche">Comment ça marche ?</a></li>
-                    <li><a href="#" title="Catégorie avis">Avis</a></li>
-                    <li><a href="#" title="Catégorie nos offres">Nos offres</a></li>
-                    <li><a href="#" title="Catégorie contact">Contact</a></li>
+                    <li><a class="link-hover" title="Page comment ça marche" href="#">Comment ça marche ?</a></li>
+                    <li><a class="link-hover" title="Page avis" href="#">Avis</a></li>
+                    <li><a class="link-hover" title="Page nos offres" href="#">Nos offres</a></li>
+                    <li><a class="link-hover" title="Page contact" href="#">Contact</a></li>
                 </ul>
             </div>
         </div>

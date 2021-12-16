@@ -1,71 +1,92 @@
 footer{
     background-color: $black;
     color: $white;
-    width: 100vw;
 
-    .content{
-        padding: 50px 0;
+    a{
+        color: $white;
+        white-space: nowrap;
+    }
+
+    .footer-contain{
+        padding: 70px 0 70px 0 ;
         display: flex;
         justify-content: space-between;
-        align-items: center;
-
-        .cr{
-            .copyright{
-                margin-top: 25px;
-            }
+        width: 80%;
+        margin: 0 auto;
+        @media (max-width: 1299px){ 
+            width: 90%;
         }
-        .categorie{
-            text-transform: uppercase;
-            font-weight: bold;
+        @media (max-width: 1094px){ 
+            width: 50%;
         }
+        @media (max-width: 1094px){ 
+            flex-direction: column;
+        }
+        .info{
+            .list-sn{
+                display: flex;
 
-        .infos{
-            .bureau{
-                margin-bottom: 40px;
-            }
-            .adresse{
-                margin-top: 15px;
-            }
-            .rs{
-
-                .liste-rs{
-                    margin-top: 15px;
-                    display: flex;
-    
-                    li{
-                        margin-right: 20px;
-    
-                        a{
-                            font-size: 25px;
-                            text-decoration: none;
-                            color: $white;
+                li{
+                    font-size: 1.35rem;
+                    margin-right: 15px;
+                    margin-bottom: 0;
+                    &:last-child{
+                        margin: 0;
+                    }
+                    a{
+                        text-decoration: none;
+                        transition: color 0.3s;
+                        &:hover{
                             transition: color 0.3s;
-
-                            &:hover{
-                                color: $yellow;
-                                transition: color 0.3s;
-                            }
+                            color: $yellow;
                         }
                     }
                 }
             }
         }
 
-        .nav{
-            li{
-                margin-bottom: 15px;
-                &:last-child{
-                    margin-bottom: 0;
-                }
-                a{
-                    text-decoration: none;
-                    color: $white;
+        .nav-footer{
+            a{
+                text-decoration: none;
+                transition: color 0.3s;
+                &:hover{
+                    color: $yellow;
                     transition: color 0.3s;
-                    &:hover{
-                        color: $yellow;
-                        transition: color 0.3s;
-                    }
                 }
+            }
+        }
+
+
+        .footer-title{
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        
+        li, .footer-title, .logo{
+            margin-bottom: 25px;
+        }
+        
+        .link-mobile{
+            display: none;
+            @media (max-width: 1000px){ 
+                display: block;
+            }
+        }
+
+        .link-desktop{
+            @media (max-width: 1000px){ 
+                display: none;
+            }
+        }
+
+        .location{
+            margin-bottom: 40px;
+        }
+
+        @media (max-width: 1094px){ 
+            .cr, .info{
+                margin-bottom: 50px;
             }
         }
 

@@ -80,7 +80,9 @@ body{
             color: $black;
             border: 4px $yellow solid;
             transition: background-color 0.3s;
-
+            @media (max-width: 1225px){ 
+                color: $white;
+            }
             &:hover{
                 background-color: $yellow;
                 transition: background-color 0.3s;
@@ -93,6 +95,9 @@ body{
     font-size: 3.9375rem;
     font-weight: bold;
     color: $yellow;
+    @media (max-width: 1225px){ 
+        font-size: 3rem;
+    }
 }
 
 .content{

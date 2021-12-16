@@ -3,6 +3,9 @@
     .box{
         display: flex;
         margin: 50px 0;
+        @media (max-width: 1225px){ 
+            flex-direction: column;
+        }
 
         .left-content{
             display: flex;
@@ -14,6 +17,9 @@
                 font-size: 2.125rem;
                 font-weight: bold;
                 margin-bottom: 25px;
+                @media (max-width: 1320px){ 
+                    font-size: 1.8rem;
+                }
             }
 
             .descr{
@@ -23,17 +29,34 @@
         }
 
         .right-content{
+            @media (max-width: 1225px){ 
+                display: flex;
+                justify-content: center;
+                margin: 25px 0 35px 0;
+                &:last-child{
+                    margin: 25px 0 0 0;
+                }
+            }
             img{
                 width: 500px;
+                @media (max-width: 1225px){ 
+                    width: 300px;
+                }
             }
         }
     }
 
     .sejour{
         flex-direction: row-reverse;
+        @media (max-width: 1320px){ 
+            flex-direction: column;
+        }
         
         .left-content{
             margin: 0 0 0 50px;
+            @media (max-width: 1225px){ 
+                margin: 0 0 0 0;
+            }
         }
     }
 }
