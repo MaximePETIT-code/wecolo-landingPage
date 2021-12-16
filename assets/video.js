@@ -1,7 +1,7 @@
-var video = document.querySelector('.player');
-var videoPlayer = document.querySelector('#c-video');
-var yellow = document.querySelector('.yellow');
-var btn = document.getElementById('play-pause');
+const video = document.querySelector('.player');
+const videoPlayer = document.querySelector('#c-video');
+const yellow = document.querySelector('.yellow');
+const btn = document.getElementById('play-pause');
 // var btnMute = document.getElementById('mute-demute');
 const volume = videoPlayer.querySelector('.volume');
 const mute = videoPlayer.querySelector('.mute');
@@ -26,7 +26,7 @@ btn.onclick = function(){
 
 //Barre progression
 video.addEventListener("timeupdate", function(){
-    var yellowPosition = video.currentTime / video.duration;
+    let yellowPosition = video.currentTime / video.duration;
     yellow.style.width = yellowPosition * 100 + "%";
     if(video.ended){
         btn.className = "play";
