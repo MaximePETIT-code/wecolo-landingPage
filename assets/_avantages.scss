@@ -65,17 +65,21 @@
 .wave2{
     z-index: -3;
     position: absolute;
-    bottom: -200px;
+    bottom: -150px;
+    @media (max-width: 1190px){ 
+        bottom: -120px;
+    }
     @media (max-width: 969px){ 
         display: none;
     }
 
     img{
-        width: 150%;
+        max-width: 100%;
+        width: 4000px;
         height: 100%;
-        @media (min-width: 2160px){ 
-            width: 200%;
-        }
+        // @media (min-width: 2160px){ 
+        //     width: 200%;
+        // }
     }
 }
 

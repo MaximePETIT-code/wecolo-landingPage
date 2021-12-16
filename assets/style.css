@@ -115,7 +115,7 @@ header .content .left .btn {
   margin-right: 15px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   header .content .left .btn {
     margin-bottom: 50px;
   }
@@ -384,7 +384,13 @@ header .content .right .content-img {
 .wave2 {
   z-index: -3;
   position: absolute;
-  bottom: -200px;
+  bottom: -150px;
+}
+
+@media (max-width: 1190px) {
+  .wave2 {
+    bottom: -120px;
+  }
 }
 
 @media (max-width: 969px) {
@@ -394,18 +400,13 @@ header .content .right .content-img {
 }
 
 .wave2 img {
-  width: 150%;
+  max-width: 100%;
+  width: 4000px;
   height: 100%;
 }
 
-@media (min-width: 2160px) {
-  .wave2 img {
-    width: 200%;
-  }
-}
-
 #video {
-  margin: 300px 50px 100px 50px;
+  margin: 250px 50px 100px 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
