@@ -222,18 +222,17 @@ header .content .right .content-img {
   padding: 50px 0 20px 0;
 }
 
-:required::after {
-  content: "";
-  background-color: red;
-  height: 100px;
-}
-
 .form-inscription .conteneur-champ {
+  position: relative;
   margin-bottom: 15px;
 }
 
 .form-inscription .conteneur-champ:last-child {
   margin-bottom: 0;
+}
+
+.form-inscription .conteneur-champ input, .form-inscription .conteneur-champ select {
+  background-color: #F8FBFF;
 }
 
 .form-inscription input, .form-inscription select {
@@ -254,10 +253,23 @@ header .content .right .content-img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  max-width: 100%;
 }
 
-.form-inscription .champ-nom-prenom .nom-prenom {
+.form-inscription .champ-nom-prenom .nom, .form-inscription .champ-nom-prenom .prenom {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 48%;
+}
+
+.form-inscription .champ-nom-prenom .nom {
+  margin-right: 10px;
 }
 
 .form-inscription .modal-btn {
@@ -268,6 +280,19 @@ header .content .right .content-img {
   border-radius: 26px;
   font-weight: bold;
   border: 0;
+}
+
+.form-inscription .form-label {
+  position: absolute;
+  top: -8px;
+  z-index: 3;
+  left: 8px;
+  background-color: #F8FBFF;
+  padding: 0 5px;
+}
+
+.form-inscription .c-obligatoire {
+  color: red;
 }
 
 #avantages {

@@ -60,38 +60,49 @@
                                 <h3 class="title-modal">Rejoignez les organisateurs</h3>
                                 <form class="form-inscription" action="#">
                                     <div class="conteneur-champ">
-                                        <input type="text" name="organisme" id="organisme" placeholder="Nom de l'organisme *" required>
-                                        <!-- <label class="form-label" for="organisme">Nom de l'organisme</label> -->
+                                        <label class="form-label" for="organisme">Nom de l'organisme <span class="c-obligatoire">*</span></label>
+                                        <input type="text" name="organisme" id="organisme" required>
+                                        
                                     </div>
 
                                     <div class="conteneur-champ champ-nom-prenom">
-                                        <input class="nom-prenom" type="text" name="name" id="name" placeholder="Nom *" required>
-                                        <!-- <label class="form-label" for="nom">Nom</label> -->
-                                        <input class="nom-prenom" type="text" name="prenom" id="prenom" placeholder="Prenom *" required>
-                                        <!-- <label class="form-label" for="prenom">Prenom</label> -->
+                                        <div class="nom">
+                                            <label class="form-label" for="nom">Nom <span class="c-obligatoire">*</span></label>
+                                            <input class="nom-prenom" type="text" name="name" id="name" required>
+                                        </div>
+                                        
+                                        <div class="prenom">
+                                            <label class="form-label" for="prenom">Prenom <span class="c-obligatoire">*</span></label>
+                                            <input class="nom-prenom" type="text" name="prenom" id="prenom" required>
+                                        </div>
+                                        
                                     </div>
 
                                     <div class="conteneur-champ">
+                                        <label class="form-label" for="fonction">Fonction</label>
                                         <select name="fonction" id="fonction">
                                             <option value="">Veuillez sélectionner une fonction</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
+                                            <option value="1">Municipalité</option>
+                                            <option value="2">Centre de séjour</option>
+                                            <option value="3">Colonie</option>
+                                            <option value="3">Autre</option>
                                         </select>
-                                        <!-- <label for="fonction">Fonction</label> -->
+                                        
                                     </div>
 
                                     <div class="conteneur-champ">
-                                        <input type="email" name="couriel" id="couriel" placeholder="Adresse mail *" required>
-                                        <!-- <label for="email">Adresse mail</label> -->
+                                        <label class="form-label" for="email">Adresse mail <span class="c-obligatoire">*</span></label>
+                                        <input type="email" name="couriel" id="couriel"  required>
+                                        
                                     </div>
 
                                     <div class="conteneur-champ">
-                                        <input type="tel" name="numero" id="numero" placeholder="N° de téléphone">
-                                        <!-- <label for="numero">N° de téléphone</label> -->
+                                        <label class="form-label" for="numero">N° de téléphone</label>
+                                        <input type="tel" name="numero" id="numero">
+                                        
                                     </div>
 
-                                    <span>* champs obligaroires</span>
+                                    <span><span class="c-obligatoire">*</span> champs obligaroires</span>
 
                                     <button class="modal-btn">
                                         Valider

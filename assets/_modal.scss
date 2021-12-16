@@ -41,16 +41,16 @@
         padding: 50px 0 20px 0;
     }
 }
-:required::after{
-    content: "";
-    background-color: red;
-    height: 100px;
-}
+
 .form-inscription{
     .conteneur-champ{
+        position: relative;
         margin-bottom: 15px;
         &:last-child{
             margin-bottom: 0;
+        }
+        input, select{
+            background-color: $white;
         }
     }
 
@@ -68,9 +68,17 @@
     .champ-nom-prenom{
         display: flex;
         justify-content: space-between;
+        max-width: 100%;
 
-        .nom-prenom{
+        .nom, .prenom{
+            position: relative;
+            display: flex;
+            flex-direction: column;
             width: 48%;
+        }
+
+        .nom{
+            margin-right: 10px;
         }
     }
 
@@ -82,6 +90,19 @@
         border-radius: 26px;
         font-weight: bold;
         border: 0;
+    }
+
+    .form-label{
+        position: absolute;
+        top: -8px;
+        z-index: 3;
+        left: 8px;
+        background-color: $white;
+        padding: 0 5px;
+    }
+
+    .c-obligatoire{
+        color: red;
     }
 
 }
