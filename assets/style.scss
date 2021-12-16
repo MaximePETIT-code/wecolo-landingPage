@@ -9,6 +9,10 @@
 @import "_footer.scss";
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+html {
+	scroll-behavior: smooth;
+}
+
 body{
     background-color: $white;
     font-family: 'Inter', sans-serif;
