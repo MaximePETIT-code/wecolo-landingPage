@@ -42,7 +42,6 @@ header{
     @media (max-width: 1225px){ 
         background-image: url(../assets/images/bigBanner.jpg);
         background-size: cover;
-        color: $white;
     }
     .content{
         padding-top: 84px;
@@ -58,6 +57,9 @@ header{
             display: flex;
             justify-content: center;
             flex-direction: column;
+            @media (max-width: 1225px){ 
+                color: $white;
+            }
             .baseline{
                 margin-top: 17px;
                 font-weight: bold;

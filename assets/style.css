@@ -51,7 +51,6 @@ nav .button .primary {
   header {
     background-image: url(../assets/images/bigBanner.jpg);
     background-size: cover;
-    color: #F8FBFF;
   }
 }
 
@@ -85,6 +84,12 @@ header .content .left {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (max-width: 1225px) {
+  header .content .left {
+    color: #F8FBFF;
+  }
 }
 
 header .content .left .baseline {
@@ -165,6 +170,10 @@ header .content .right .content-img {
   .wave {
     display: none;
   }
+}
+
+.modal {
+  color: #24253B;
 }
 
 .modal .modal-content {
