@@ -39,7 +39,7 @@ nav{
 }
 
 header{
-    @media (max-width: 1225px){ 
+    @media (max-width: 1317px){ 
         background-image: url(../assets/images/bigBanner.jpg);
         background-size: cover;
     }
@@ -57,7 +57,7 @@ header{
             display: flex;
             justify-content: center;
             flex-direction: column;
-            @media (max-width: 1225px){ 
+            @media (max-width: 1317px){ 
                 color: $white;
             }
             .baseline{
@@ -87,7 +87,7 @@ header{
         .right{
             width: 100%;
             display: flex;
-            @media (max-width: 1225px){ 
+            @media (max-width: 1317px){ 
                 display: none;
             }
 
@@ -115,7 +115,7 @@ header{
     top: 0;
     right: 0;
     z-index: -1;
-    @media (max-width: 1225px){ 
+    @media (max-width: 1317px){ 
         display: none;
     }
 }

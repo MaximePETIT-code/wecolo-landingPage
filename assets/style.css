@@ -47,7 +47,7 @@ nav .button .primary {
   margin-right: 20px;
 }
 
-@media (max-width: 1225px) {
+@media (max-width: 1317px) {
   header {
     background-image: url(../assets/images/bigBanner.jpg);
     background-size: cover;
@@ -86,7 +86,7 @@ header .content .left {
           flex-direction: column;
 }
 
-@media (max-width: 1225px) {
+@media (max-width: 1317px) {
   header .content .left {
     color: #F8FBFF;
   }
@@ -128,7 +128,7 @@ header .content .right {
   display: flex;
 }
 
-@media (max-width: 1225px) {
+@media (max-width: 1317px) {
   header .content .right {
     display: none;
   }
@@ -166,7 +166,7 @@ header .content .right .content-img {
   z-index: -1;
 }
 
-@media (max-width: 1225px) {
+@media (max-width: 1317px) {
   .wave {
     display: none;
   }
@@ -997,7 +997,7 @@ body {
   transition: background-color 0.3s;
 }
 
-@media (max-width: 1225px) {
+@media (max-width: 1317px) {
   .button .secondary2 a {
     color: #F8FBFF;
   }
